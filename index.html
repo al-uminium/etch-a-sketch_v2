@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap" rel="stylesheet"> 
     <title>etch a sketch ✏️</title>
 </head>
 <body>
     <div id="container">        
         <div id="wrapper">
             <div id="header-wrapper">
-                <header>etch a sketch</header>
+                <header>etch-a-sketch</header>
                 <input type="text" id="grid-size-text" placeholder="change grid size">
             </div>
             <div id="sketch-container"></div>
             <div id="footer-wrapper">
-                <div class="clean-grid">🔄</div>
+                <div class="clean-grid">⟲</div>
                 <div class="grid-brush">
-                    <div id="circle"></div>
+                    <input type="radio" name="brush" class="circle-brush" id="black-brush" checked>
+                    <label for="black-brush" id="black"></label>
+                    <input type="radio" name="brush" class="circle-brush" id="rainbow-brush">
+                    <label for="rainbow-brush" id="rainbow"></label>
                 </div>
             </div>
         </div>

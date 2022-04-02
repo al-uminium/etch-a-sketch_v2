@@ -56,7 +56,7 @@ function setHoverEventListener() {
     const totalNoOfGrids = sketchContainer.childElementCount
     for (let i = 0; i < totalNoOfGrids; i++) {
         sketchContainer.childNodes[i].addEventListener("mouseover", (mouseTarget) => {
-            mouseTarget.target.style.backgroundColor = `rgb(0,0,0)`;
+            mouseTarget.target.style.backgroundColor = `rgb(36, 40, 48)`;
         })
     }
 }
@@ -72,7 +72,7 @@ const setEventListeners = () => {
 }
 
 function initialize() {
-    createGrid(10);
+    createGrid(20);
     setEventListeners();
 }
 
