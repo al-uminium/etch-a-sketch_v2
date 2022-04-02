@@ -60,7 +60,7 @@ function removeGrid() {
 }
 
 function newGrid(gridSize) {
-    if (!(isNaN(gridSize)) && !(gridSize%2)) {
+    if (!(isNaN(gridSize))) {
 
         if (gridSize<=100) {
             removeGrid();
