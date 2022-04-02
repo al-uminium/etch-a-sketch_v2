@@ -1,0 +1,39 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+}
+
+#wrapper {
+    display: grid;
+    width: 100%;
+    height: 80%;
+    align-content: center;
+    justify-content: center;
+    grid-template-rows: 1.5rem 45rem 1.5rem;
+    grid-template-columns: 45rem;
+}
+
+header {
+    background-color: aquamarine;
+}
+
+#sketch-container {
+    display: grid;
+    background-color: blueviolet;
+}
+
+.grid-cell {
+    background-color: antiquewhite;
+}
+
+#footer-wrapper {
+    background-color: rgb(197, 227, 255);
+}
