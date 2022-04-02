@@ -27,12 +27,13 @@ header {
     height: 80%;
     align-content: center;
     justify-content: center;
-    grid-template-rows: 2.5rem 45rem 2.5rem;
+    grid-template-rows: 2.5rem 45rem 1.5rem;
     grid-template-columns: 45rem;
 }
 
 #header-wrapper, #footer-wrapper {
     display: flex;
+    height: 100%;
     justify-content: space-between;
     align-items: center;
 }
@@ -78,6 +79,11 @@ header {
     color: aliceblue;
 }
 
+.clean-grid:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
 .grid-brush {
     display: flex;
     flex-direction: row-reverse;
@@ -94,7 +100,7 @@ header {
     height: 1rem;
     border-radius: 55%;
     border: 0.2rem rgb(83, 90, 145) solid;
-    margin: 0.2rem;
+    margin: 0.2rem 0.4rem;
 }
 
 #black {
@@ -108,6 +114,7 @@ header {
 
 .grid-brush input[type="radio"]:checked + label{
     border: 0.2rem rgb(255, 255, 255) solid;
+    transform: scale(1.5);
 }
 
 .grid-brush input[type="radio"]:focus + label{
