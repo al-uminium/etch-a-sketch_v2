@@ -67,10 +67,7 @@ function newGrid(gridSize) {
             createGrid(gridSize);
         } else {
             window.alert("It's too big! Try numbers from 2-100")
-        }
-        
-    } else if (gridSize%2) {
-        window.alert("Only even numbers are allowed.")
+        } 
     } else {
         window.alert("Invalid grid size entered, please try again.")
     }
