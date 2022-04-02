@@ -48,9 +48,8 @@ function createGrid(width) {
 
 function clearGrid() {
     const totalNoOfGrids = sketchContainer.childElementCount
-    for (let i = 0; i < totalNoOfGrids; i++) {
-        sketchContainer.childNodes[i].style.backgroundColor = gridBGColor;
-    }
+    removeGrid()
+    createGrid(totalNoOfGrids**0.5)
 }
 
 function removeGrid() {
