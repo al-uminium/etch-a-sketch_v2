@@ -28,10 +28,13 @@ header {
 #sketch-container {
     display: grid;
     background-color: blueviolet;
+    padding: 0.5rem;
 }
 
 .grid-cell {
-    background-color: antiquewhite;
+    background-color: rgb(246, 242, 247);
+    border: 0.2rem solid;
+    cursor: crosshair;
 }
 
 #footer-wrapper {
